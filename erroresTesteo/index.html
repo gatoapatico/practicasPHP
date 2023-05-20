@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Errores Testeo">
+        <style>
+            .formulario{
+                margin: auto;
+                width: 450px;
+                height: 450px;
+                border: 1px solid black;
+                border-radius: 15px;
+                padding: 10px;
+            }
+
+            *{
+                font-size: 20px;
+            }
+
+            input[type="submit"]{
+                background-color: rgb(86, 114, 238);
+                margin: 10px;
+                border-radius: 15px;
+                border: none;
+                padding: 10px;
+            }
+
+            input[type="submit"]:hover{
+                box-shadow: 0 0 10px black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="formulario">
+            <h1 align="center">Testeo de Errores</h1>
+            <form action="enlace.php" method="POST">
+                <label for="num1">Número 1</label>
+                <input type="text" id="num1" name="num1" pattern="[0-9]*">
+                <br>
+                <label for="num2">Número 2</label>
+                <input type="text" id="num2" name="num2" pattern="[0-9]*">
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
